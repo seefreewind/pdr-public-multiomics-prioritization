@@ -1,5 +1,23 @@
 cff-version: 1.2.0
-title: PDR Round5 frozen-universe evidence audit
+message: "If you use this repository, please cite the archived Zenodo record."
+title: "Retrospective multi-source evidence audit and candidate prioritization in proliferative diabetic retinopathy"
+version: "0.1.0"
+date-released: "2026-07-17"
+repository-code: "https://github.com/seefreewind/pdr-public-multiomics-prioritization"
 authors:
-  - name: AUTHOR CONFIRMATION REQUIRED
-message: Please cite after repository DOI is assigned.
+  - family-names: "Zha"
+    given-names: "Yi"
+    affiliation: "The Second Affiliated Hospital of Wenzhou Medical University, Wenzhou, Zhejiang, China"
+  - family-names: "Lin"
+    given-names: "Da"
+    affiliation: "The Second Affiliated Hospital of Wenzhou Medical University, Wenzhou, Zhejiang, China"
+  - family-names: "Chen"
+    given-names: "Ying"
+    affiliation: "Wenzhou Medical University, Wenzhou, Zhejiang, China"
+  - family-names: "Liu"
+    given-names: "Yue"
+    affiliation: "Wenzhou Medical University, Wenzhou, Zhejiang, China"
+  - family-names: "Zhang"
+    given-names: "Yu"
+    affiliation: "The Second Affiliated Hospital of Wenzhou Medical University, Wenzhou, Zhejiang, China"
+    orcid: "https://orcid.org/0000-0001-8579-3692"
