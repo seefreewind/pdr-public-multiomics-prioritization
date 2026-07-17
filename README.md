@@ -39,5 +39,11 @@ the accessions reported in the manuscript and audit files.
 
 ## Citation and archival DOI
 
-After the GitHub repository is finalized, create a GitHub release and archive it
-with Zenodo to obtain a citable DOI for the submitted version.
+The manuscript-support archive corresponding to this repository is available
+through Zenodo:
+
+https://doi.org/10.5281/zenodo.21404212
+
+Suggested data-availability wording:
+
+`The analysis code and processed, non-restricted manuscript-support files are available at GitHub: https://github.com/seefreewind/pdr-public-multiomics-prioritization. The version corresponding to this manuscript has been archived at Zenodo: https://doi.org/10.5281/zenodo.21404212. Raw public datasets should be obtained from the original repositories using the accessions reported in the manuscript.`

@@ -4,6 +4,7 @@ title: "Retrospective multi-source evidence audit and candidate prioritization i
 version: "0.1.0"
 date-released: "2026-07-17"
 repository-code: "https://github.com/seefreewind/pdr-public-multiomics-prioritization"
+doi: "10.5281/zenodo.21404212"
 authors:
   - family-names: "Zha"
     given-names: "Yi"
