@@ -7,13 +7,13 @@ ROOT = Path(__file__).resolve().parents[2]
 OUTPUTS = ROOT / "outputs"
 REPORTS = ROOT / "reports"
 
-MAIN = OUTPUTS / "jtm_manuscript_round7_submission_ready_pending_author_confirmation.docx"
+MAIN = OUTPUTS / "jtm_manuscript_round7_submission_ready_confirmed.docx"
 FILES = [
     MAIN,
     OUTPUTS / "jtm_title_page_round7.docx",
-    OUTPUTS / "jtm_declarations_round7_pending_author_confirmation.docx",
+    OUTPUTS / "jtm_declarations_round7_confirmed.docx",
     OUTPUTS / "jtm_cover_letter_round7.docx",
-    OUTPUTS / "jtm_author_confirmation_checklist_round7.docx",
+    OUTPUTS / "jtm_author_confirmation_record_round7.docx",
 ]
 
 REQUIRED_MAIN_STRINGS = {
@@ -28,10 +28,10 @@ REQUIRED_MAIN_STRINGS = {
     "conservative conclusion": "do not establish causal genes, clinical biomarkers or treatment-ready interventions",
 }
 
-EXPECTED_AUTHOR_CONFIRMATIONS = {
-    "individual contribution details": "please verify individual contribution details before submission",
-    "funding/grant numbers": "insert grant numbers and funder names",
-    "competing interests": "if accurate, replace this sentence",
+FINAL_DECLARATION_STRINGS = {
+    "accepted contribution wording": "All authors read and approved the final manuscript.",
+    "no specific funding": "This research received no specific grant from any funding agency",
+    "no competing interests": "The authors declare that they have no competing interests.",
 }
 
 
@@ -52,8 +52,15 @@ def main() -> None:
     for label, needle in REQUIRED_MAIN_STRINGS.items():
         rows.append(("main manuscript required content", label, passfail(needle in main_text)))
 
-    for label, needle in EXPECTED_AUTHOR_CONFIRMATIONS.items():
-        rows.append(("expected author-confirmation blocker", label, passfail(needle in main_text)))
+    for label, needle in FINAL_DECLARATION_STRINGS.items():
+        rows.append(("final declaration content", label, passfail(needle in main_text)))
+    rows.append(
+        (
+            "final declaration content",
+            "no author-confirmation placeholders remain",
+            passfail("AUTHOR CONFIRMATION REQUIRED" not in main_text),
+        )
+    )
 
     rows.append(
         (
@@ -96,8 +103,8 @@ def main() -> None:
             "",
             "## Interpretation",
             "",
-            "The remaining flagged items are intentional author-confirmation blockers rather than computational analysis blockers.",
-            "Before journal submission, the corresponding author should confirm contribution wording, funding/grant numbers, competing interests, repository visibility and Zenodo license/access status.",
+            "Author-side confirmations have been incorporated into the final Round7 files.",
+            "The remaining pre-submission action is operational: use the public GitHub URL and confirmed Zenodo DOI in the journal submission system.",
         ]
     )
 

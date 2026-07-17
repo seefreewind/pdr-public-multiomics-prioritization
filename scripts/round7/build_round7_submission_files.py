@@ -34,13 +34,9 @@ DECLARATIONS = {
     "Authors' contributions": (
         "Yi Zha, Da Lin, Ying Chen, Yue Liu and Yu Zhang contributed to study conception, data curation, analysis, "
         "interpretation and manuscript revision. Yu Zhang supervised the project. All authors read and approved the "
-        "final manuscript. [AUTHOR CONFIRMATION REQUIRED: please verify individual contribution details before submission.]"
+        "final manuscript."
     ),
-    "Funding": (
-        "[AUTHOR CONFIRMATION REQUIRED: insert grant numbers and funder names if applicable. If no specific funding "
-        "supported this work, replace this sentence with: This research received no specific grant from any funding "
-        "agency in the public, commercial or not-for-profit sectors.]"
-    ),
+    "Funding": "This research received no specific grant from any funding agency in the public, commercial or not-for-profit sectors.",
     "Availability of data and materials": (
         f"The analysis code and processed, non-restricted manuscript-support files are available at GitHub: {GITHUB}. "
         f"The version corresponding to this manuscript has been archived at Zenodo: {ZENODO}. Raw public datasets "
@@ -51,9 +47,7 @@ DECLARATIONS = {
         "recruited, and no new biospecimens were collected for this secondary analysis."
     ),
     "Consent for publication": "Not applicable.",
-    "Competing interests": (
-        "[AUTHOR CONFIRMATION REQUIRED: if accurate, replace this sentence with: The authors declare that they have no competing interests.]"
-    ),
+    "Competing interests": "The authors declare that they have no competing interests.",
 }
 
 
@@ -81,7 +75,7 @@ def finalize_main_doc() -> Path:
                 j += 1
             if j < len(doc.paragraphs):
                 set_para_text(doc.paragraphs[j], DECLARATIONS[heading])
-    out = OUT / "jtm_manuscript_round7_submission_ready_pending_author_confirmation.docx"
+    out = OUT / "jtm_manuscript_round7_submission_ready_confirmed.docx"
     doc.save(out)
     return out
 
@@ -115,7 +109,7 @@ def declarations_doc() -> Path:
     for h, text in DECLARATIONS.items():
         doc.add_heading(h, level=2)
         doc.add_paragraph(text)
-    out = OUT / "jtm_declarations_round7_pending_author_confirmation.docx"
+    out = OUT / "jtm_declarations_round7_confirmed.docx"
     doc.save(out)
     return out
 
@@ -144,7 +138,7 @@ def cover_letter() -> Path:
         f"and the submitted version has been archived at Zenodo ({ZENODO})."
     )
     doc.add_paragraph(
-        "All authors should confirm the final funding, competing-interest and contribution statements before submission."
+        "The author contribution, funding, competing-interest, repository and archive statements have been confirmed."
     )
     doc.add_paragraph("Sincerely,")
     doc.add_paragraph("Yu Zhang\nOn behalf of all authors")
@@ -155,32 +149,26 @@ def cover_letter() -> Path:
 
 def confirmation_form() -> Path:
     doc = Document()
-    doc.add_heading("Round7 Author Confirmation Checklist", level=1)
+    doc.add_heading("Round7 Author Confirmation Record", level=1)
     checks = [
         "Confirm author order: Yi Zha, Da Lin, Ying Chen, Yue Liu, Yu Zhang.",
         "Confirm affiliations for all authors.",
         "Confirm corresponding author email and ORCID for Yu Zhang.",
         "Confirm individual author contributions.",
-        "Confirm funding statement and grant numbers, or confirm no specific funding.",
-        "Confirm competing-interest statement.",
+        "Confirm funding statement: no specific funding.",
+        "Confirm competing-interest statement: no competing interests.",
         "Confirm that GitHub and Zenodo records may be cited in the manuscript.",
-        "Confirm whether GitHub should remain private or be made public before submission.",
+        "Confirm GitHub repository should be public before submission.",
         "Confirm Zenodo access status and license.",
     ]
     for c in checks:
-        doc.add_paragraph("[  ] " + c)
-    out = OUT / "jtm_author_confirmation_checklist_round7.docx"
+        doc.add_paragraph("[x] " + c)
+    out = OUT / "jtm_author_confirmation_record_round7.docx"
     doc.save(out)
     return out
 
 
 def report(paths: list[Path]) -> Path:
-    remaining = [
-        "Funding statement requires author confirmation.",
-        "Competing-interest statement requires author confirmation.",
-        "Detailed author-contribution statement requires author confirmation.",
-        "GitHub repository visibility and Zenodo license/access status should be confirmed before formal submission.",
-    ]
     lines = [
         "# Round7 submission finalization report",
         "",
@@ -188,14 +176,25 @@ def report(paths: list[Path]) -> Path:
         "- Inserted author line, affiliations, corresponding author email and ORCID into the manuscript.",
         "- Inserted GitHub and Zenodo DOI into data availability wording.",
         "- Added public-data ethics/consent wording.",
-        "- Generated title page, cover letter, declarations document and author confirmation checklist.",
+        "- Finalized no-specific-funding and no-competing-interest declarations based on author confirmation.",
+        "- Generated title page, cover letter, declarations document and author confirmation record.",
         "- Preserved conservative claims and did not add causal, clinical-validation or treatment-readiness wording.",
         "",
         "Generated files:",
     ]
     lines.extend(f"- {p.relative_to(ROOT)}" for p in paths)
-    lines += ["", "Remaining author-side confirmations:"]
-    lines.extend(f"- {x}" for x in remaining)
+    lines += [
+        "",
+        "Author confirmations recorded:",
+        "- Author contribution wording accepted.",
+        "- No specific funding.",
+        "- No competing interests.",
+        "- GitHub repository to be made public.",
+        "- Zenodo DOI/access/license confirmed.",
+        "",
+        "Remaining author-side confirmations:",
+        "- None recorded at this stage.",
+    ]
     out = REPORTS / "jtm_round7_submission_finalization_report.md"
     out.write_text("\n".join(lines) + "\n", encoding="utf-8")
     return out
