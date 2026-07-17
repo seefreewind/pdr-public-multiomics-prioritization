@@ -1,0 +1,10 @@
+number	meaning	source
+691	broader full v7 candidate context table	results/target_scoring/target_priority_v7_retina_twas.csv
+430	frozen primary-ranking universe	results/ranking/primary_rank_average_ties.csv
+416	genetics-first candidate universe size	results/jtm_final/candidate_universe_comparison.csv
+17	focused prioritized set	results/jtm_final/robust_shortlist_final.csv
+5	focused genes evaluable in archived scRNA summaries	results/jtm_final/scrna_candidate_detection_prevalence.csv
+12	focused genes unevaluable in archived scRNA summaries	Figure2/source tables
+1720	bulk candidate-dataset rows	results/jtm_final/bulk_candidate_effects_final.csv
+5000	Monte Carlo draws	scripts/18_jtm_revision/01_build_jtm_revision_outputs.py
+1000	structural permutation repeats	results/jtm_final/ranking_permutation_diagnostic_summary.csv

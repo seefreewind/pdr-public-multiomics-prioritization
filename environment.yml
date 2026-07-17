@@ -1,0 +1,13 @@
+name: pdr-jtm-round5
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.10
+  - pandas
+  - numpy
+  - matplotlib
+  - pillow
+  - openpyxl
+  - pip
+  - pip:
+      - python-docx

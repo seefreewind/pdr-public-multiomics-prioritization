@@ -1,0 +1,18 @@
+gene	evaluable_dataset_groups	positive_effect_count	negative_effect_count	FDR_positive_count	FDR_negative_count	direction_concordance	median_LOO_concordance	minimum_LOO_concordance	summary
+VWF	4	4	0	2	0	4/4 positive	1.0	1.0	4/4 groups evaluable; 2 FDR-positive and 0 FDR-negative effects; direction 4 positive/0 negative; median LOO 1.00
+COL5A1	4	4	0	3	0	4/4 positive	1.0	1.0	4/4 groups evaluable; 3 FDR-positive and 0 FDR-negative effects; direction 4 positive/0 negative; median LOO 1.00
+VCAN	4	4	0	2	0	4/4 positive	1.0	1.0	4/4 groups evaluable; 2 FDR-positive and 0 FDR-negative effects; direction 4 positive/0 negative; median LOO 1.00
+ALOX5AP	4	3	1	2	0	3/4 positive	0.6666666666666666	0.6666666666666666	4/4 groups evaluable; 2 FDR-positive and 0 FDR-negative effects; direction 3 positive/1 negative; median LOO 0.67
+CTSB	4	4	0	1	0	4/4 positive	1.0	1.0	4/4 groups evaluable; 1 FDR-positive and 0 FDR-negative effects; direction 4 positive/0 negative; median LOO 1.00
+FN1	4	4	0	3	0	4/4 positive	1.0	1.0	4/4 groups evaluable; 3 FDR-positive and 0 FDR-negative effects; direction 4 positive/0 negative; median LOO 1.00
+SULF1	4	4	0	2	0	4/4 positive	1.0	1.0	4/4 groups evaluable; 2 FDR-positive and 0 FDR-negative effects; direction 4 positive/0 negative; median LOO 1.00
+CCDC102B	4	3	1	2	0	3/4 positive	0.6666666666666666	0.6666666666666666	4/4 groups evaluable; 2 FDR-positive and 0 FDR-negative effects; direction 3 positive/1 negative; median LOO 0.67
+SPARC	4	3	1	3	0	3/4 positive	0.6666666666666666	0.6666666666666666	4/4 groups evaluable; 3 FDR-positive and 0 FDR-negative effects; direction 3 positive/1 negative; median LOO 0.67
+CFH	4	3	1	2	0	3/4 positive	0.6666666666666666	0.6666666666666666	4/4 groups evaluable; 2 FDR-positive and 0 FDR-negative effects; direction 3 positive/1 negative; median LOO 0.67
+THY1	4	3	1	2	0	3/4 positive	0.6666666666666666	0.6666666666666666	4/4 groups evaluable; 2 FDR-positive and 0 FDR-negative effects; direction 3 positive/1 negative; median LOO 0.67
+COL1A2	4	4	0	3	0	4/4 positive	1.0	1.0	4/4 groups evaluable; 3 FDR-positive and 0 FDR-negative effects; direction 4 positive/0 negative; median LOO 1.00
+ST6GALNAC3	4	3	1	1	0	3/4 positive	0.6666666666666666	0.6666666666666666	4/4 groups evaluable; 1 FDR-positive and 0 FDR-negative effects; direction 3 positive/1 negative; median LOO 0.67
+COL11A1	4	4	0	1	0	4/4 positive	1.0	1.0	4/4 groups evaluable; 1 FDR-positive and 0 FDR-negative effects; direction 4 positive/0 negative; median LOO 1.00
+SEMA5A	4	4	0	2	0	4/4 positive	1.0	1.0	4/4 groups evaluable; 2 FDR-positive and 0 FDR-negative effects; direction 4 positive/0 negative; median LOO 1.00
+MSR1	4	4	0	2	0	4/4 positive	1.0	1.0	4/4 groups evaluable; 2 FDR-positive and 0 FDR-negative effects; direction 4 positive/0 negative; median LOO 1.00
+HERPUD1	3	2	1	1	0	2/3 positive	0.5833333333333333	0.5	3/4 groups evaluable; 1 FDR-positive and 0 FDR-negative effects; direction 2 positive/1 negative; median LOO 0.58

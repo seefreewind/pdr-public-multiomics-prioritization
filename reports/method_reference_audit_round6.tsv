@@ -1,0 +1,14 @@
+reference	method	used_in_round5	used_in_archived_upstream_pipeline	evidence_in_repository	current_citation_location	keep_remove_or_move	reason
+Wolf 2018 Scanpy	Scanpy	no	yes	scripts/01_scrna_qc and archived h5ad outputs	Supplementary Methods only	move	Round6 final analysis used archived scRNA summaries.
+Virshup 2024 AnnData	AnnData	no	yes	archived h5ad workflow	Supplementary Methods only	move	Not needed in main text.
+Korsunsky 2019 Harmony	Harmony	no	yes	scripts/01_scrna_qc/03_harmony_integrate.py	Supplementary Methods only	move	Upstream integration only.
+McInnes 2018 UMAP	UMAP	no	yes	archived scRNA visualization scripts	Supplementary Methods only	move	No Round6 final inference depends on UMAP.
+Traag 2019 Leiden	Leiden	no	yes	archived clustering scripts	Supplementary Methods only	move	No Round6 final inference depends on Leiden clustering.
+Robinson 2010 edgeR	edgeR	no	yes	archived bulk-validation scripts	Supplementary Methods only	move	Round6 reads processed bulk summaries.
+Chen 2016 edgeR QL	edgeR quasi-likelihood	no	yes	archived bulk workflow	Supplementary Methods only	move	Round6 does not rerun differential expression.
+Robinson 2010 TMM	TMM	no	yes	archived bulk workflow	Supplementary Methods only	move	Round6 does not rerun normalization.
+Ritchie 2015 limma	limma	no	yes	archived bulk workflow	Supplementary Methods only	move	Round6 reads processed summaries.
+Law 2014 voom	voom	no	yes	archived bulk workflow	Supplementary Methods only	move	Round6 does not rerun voom.
+Benjamini 1995 BH	Benjamini-Hochberg FDR	yes	yes	protein/bulk summaries and FDR language	Methods	keep	FDR threshold is discussed in final analysis.
+Pihur 2009 RankAggreg	RankAggreg	no	possible earlier	Round6 ranking uses Monte Carlo rank scores, not RankAggreg	remove from main	remove	No final Round6 use.
+Frankish 2023 GENCODE	GENCODE	no	yes	symbol mapping in archived genomics workflows	Supplementary Methods only	move	Not needed in main Round6 references.

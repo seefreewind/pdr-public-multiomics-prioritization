@@ -1,0 +1,7 @@
+discussion_topic	candidate_gene_or_module	current_claim	current_reference	reference_support_level	new_reference_needed	recommended_reference_type	overstatement_risk	recommended_wording
+principal findings	all candidates	universe stable but layer sensitive	internal outputs	strong internal	no	internal audit	low	stable to universe construction rather than universal ranking robustness
+vascular/ECM axis	VWF/COL5A1/VCAN/FN1/SULF1/SPARC/COL1A2/COL11A1/THY1	ECM prominence may reflect fibrosis and tissue composition	[3-8,10]	pathway-level	yes	PDR FVM scRNA/bulk	medium	may reflect both authentic fibrotic biology and surgical end-stage composition
+myeloid/complement axis	ALOX5AP/CTSB/MSR1/CFH/HERPUD1	inflammatory and complement context	[3,11-15]	pathway-level	yes	PDR scRNA/proteomics	medium	pathway-level concordance, not independent gene validation
+cross-omic disagreement	all candidates	scRNA/bulk/protein answer different biological questions	[14-17]	strong contextual	yes	proteomics and compartment studies	low	protein FDR-negative findings limit cross-omic confirmation
+genetics/TWAS	CFH/CDH6/FRMD4A	nearest-gene and TWAS are not causal proof	[18-23]	methodological	yes	GWAS/TWAS/eQTL resources	high	genetic context, not confirmed causal genes
+drug context	fenofibrate/kinase inhibitors/pentoxifylline	therapeutic context only	[26-31]	contextual	yes	clinical/experimental drug studies	high	mechanistic probe or positive-control context

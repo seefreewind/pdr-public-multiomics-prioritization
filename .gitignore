@@ -1,0 +1,28 @@
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+*.log
+*.tmp
+
+# Large/raw scientific data objects should not be committed.
+*.h5ad
+*.h5
+*.loom
+*.rds
+*.RData
+*.fastq
+*.fq
+*.bam
+*.sam
+*.cram
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+
+# Local render QA folders
+docx_render*/
+reports/docx_render*/

@@ -1,0 +1,32 @@
+# Round6 Discussion/reference QC
+
+- PASS: Discussion word count reasonable
+- PASS: principal findings included
+- PASS: vascular/ECM axis discussed
+- PASS: myeloid/complement axis discussed
+- PASS: scRNA/bulk/protein differences explained
+- PASS: protein FDR negative explicit
+- PASS: previous integration studies compared
+- PASS: genetics/TWAS explained
+- PASS: drug context separated from treatment
+- PASS: validation roadmap present
+- PASS: 430 upstream unrecoverable acknowledged
+- PASS: 17 rule retrospective acknowledged
+- PASS: no independent holdout acknowledged
+- PASS: pathway concordance not gene validation
+- PASS: unsupported causal/clinical wording absent
+- PASS: literature search log exists
+- PASS: DOI field audited
+- PASS: all references cited
+- PASS: no missing references for citations
+- PASS: method audit exists
+- PASS: upstream-only methods moved
+- PASS: no duplicate reference numbers
+- PASS: citation numbering continuous
+- PASS: reference format includes DOI for most
+- PASS: Discussion not Methods repeat
+- PASS: Conclusion consistent
+- PASS: independent validation not claimed
+- PASS: drug not called treatment candidate
+- PASS: nearest-gene not causal
+- PASS: protein nominal not validation

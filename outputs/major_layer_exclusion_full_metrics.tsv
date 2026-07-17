@@ -1,0 +1,6 @@
+excluded_layer	analysis_status	top17_recovery	top30_jaccard	top30_overlap	spearman_rho	median_absolute_rank_change	maximum_rank_change	genes_entering_top30	genes_leaving_top30	reason
+scRNA	recomputed_fixed_430_universe_weights_renormalized_over_remaining_layers	14.0	0.4634146341463415	19.0	0.910349324043566	35.25	132.0	ARHGAP15;C5AR1;COL4A1;COL4A2;CSF1R;ITGA2;LCP1;NNMT;NPL;PALLD;STK17B	ADGRL4;COL1A2;DLC1;DOCK4;NAMPT;SEMA5A;SPP1;STAB1;TAGLN;THY1;TYROBP	
+bulk	recomputed_fixed_430_universe_weights_renormalized_over_remaining_layers	13.0	0.4634146341463415	19.0	0.9007267313928122	37.75	128.5	APOE;COL18A1;COL8A1;CTSD;EBF1;FTH1;LUZP2;PLXDC1;PREX2;PRKG1;RAPGEF5	CDH2;COL1A2;DLC1;GPNMB;MSR1;NAMPT;SEMA5A;STAB1;TAGLN;TCF4;THY1	
+genetics_TWAS	recomputed_fixed_430_universe_weights_renormalized_over_remaining_layers	7.0	0.2	10.0	0.6740523885671648	65.0	249.0	AEBP1;APOC1;BGN;C1QA;C1QC;CALD1;CD74;COL1A1;COL3A1;COL6A2;COL6A3;HLA-DMB;HLA-DPA1;HLA-DPB1;HLA-DRA;IGFBP7;MS4A6A;NOTCH3;POSTN;UACA	ADGRL4;ALOX5AP;CCDC102B;CDH2;CDH6;CFH;COL11A1;CTSB;DLC1;DOCK4;FRMD4A;GPNMB;HERPUD1;MSR1;NAMPT;SEMA5A;SPP1;ST6GALNAC3;SULF1;TCF4	
+protein	not_ranked_layer									protein/drug were contextual annotations and not part of the four-layer primary ranking matrix
+drug	not_ranked_layer									protein/drug were contextual annotations and not part of the four-layer primary ranking matrix
